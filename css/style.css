@@ -2,6 +2,8 @@
 /* Variables */
 :root {
     --main-color:#19c8fa;
+    --overlay-color:rgb(0 0 0 / 50%);
+    --transparent-color:rgb(15 116 143 / 50%);
 }
 * {
     box-sizing: border-box;
@@ -14,11 +16,11 @@ html {
 }
 body {
     font-family:  "Open Sans", sans-serif ;
-    background-color: black;
 }
-/* header {
-    width: 100%; */
-
+header {
+    position: absolute;
+    width: 100%;
+}
 .container {
     padding-left: 15px;
     padding-right: 15px;
@@ -58,6 +60,7 @@ header .container nav ul {
 @media (max-width: 768px) {
     header .container nav ul {
         display: none;
+        background-color: var(--overlay-color);
     }
     header .container nav .navbar{
         cursor: pointer;
@@ -101,6 +104,57 @@ header .container nav .search-bar {
     transform: translateY(-50%);
 }
 /* End Header */
+/* Start Landing */
+.Landing {
+    position: relative;
+    height: 100vh;
+    background-image:url(../images/landing.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+.Landing::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: var(--overlay-color);
+    width: 100%;
+    height: 100%;
+}
+.Landing .text-box {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+    padding: 30px;
+    display:flex;
+    justify-content: flex-end;
+    background-color: var(--transparent-color);
+}
+@media (max-width:768px) {
+    .Landing .text-box {
+        width: 100%;
+        justify-content: center;
+    }
+}
+.Landing .text-box .content {
+    width: 500px;
+    padding: 20px;
+}
+.Landing .text-box .content h2 {
+    font-weight: normal;
+    text-transform: capitalize;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.Landing .text-box .content p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+/* Start Landing */
+
+/* End Landing */
 /* Extra Small */
 @media (max-width: 576px) {
     .container {
