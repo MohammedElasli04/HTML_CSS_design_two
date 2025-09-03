@@ -150,10 +150,45 @@ header .container nav .search-bar {
 }
 .Landing .text-box .content p {
     line-height: 1.6;
-    margin-bottom: 20px;
 }
-/* Start Landing */
-
+.Landing .change-background {
+    position: absolute;
+    top: 50%;
+    z-index: 3;
+    transform: translateY(-50%);
+}
+.Landing .change-background:first-child {
+    left: 30px;
+}
+.Landing .change-background:nth-child(2) {
+    right: 30px;
+}
+@media (max-width:768px) {
+    .Landing .change-background:nth-child(2) {
+        right: 20px;
+    }
+    .Landing .change-background:first-child {
+        left: 20px;
+    }
+}
+.Landing .bullets {
+    position: absolute;
+    display: flex;
+    left: 50%;
+    bottom: 15px;
+    transform: translateX(-50%);
+}
+.Landing .bullets li {
+    width: 15px;
+    height: 15px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 4px;
+}
+.Landing .bullets li.active {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
 /* End Landing */
 /* Extra Small */
 @media (max-width: 576px) {
