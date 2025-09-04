@@ -34,6 +34,7 @@ ul {
 /* Start Components */
 .main-heading {
     text-align: center;
+    margin-bottom: 95px;
 }
 .main-heading h3 {
     text-transform: uppercase;
@@ -68,7 +69,7 @@ ul {
 .main-heading p {
     color: var(--text-color);
     margin: 40px auto 50px;
-    width: 500px;
+    max-width: 500px;
 }
 /* End Components */
 /* Start Header */
@@ -99,7 +100,7 @@ header .container nav {
 header .container nav ul {
     display: flex;
 }
-@media (max-width: 768px) {
+@media (max-width: 769px) {
     header .container nav ul {
         display: none;
         background-color: var(--overlay-color);
@@ -238,15 +239,34 @@ header .container nav .search-bar {
     padding-bottom: var(--padding-section);
 }
 .Services .services-container {
-    /* background-color: black; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-column-gap: 130px;
+    grid-row-gap: 100px;
+}
+@media (max-width: 576px) {
+    .Services .services-container {
+        grid-row-gap: 0px;
+    }
 }
 .Services .services-container .services-box {
     display: flex;
-    
+}
+@media (max-width: 576px) {
+    .Services .services-container .services-box {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 20px;
+    }
 }
 .Services .services-container i {
     color: black;
     margin-right: 40px;
+}
+@media (max-width: 576px) {
+    .Services .services-container i {
+        margin: 0 auto 20px;
+    }
 }
 .Services .services-container .text h5 {
     font-weight: 900;
@@ -272,7 +292,7 @@ header .container nav .search-bar {
     }
 }
 /* Medium (md) ≥768px */
-@media (min-width: 768px) {
+@media (min-width: 769px) {
     .container {
         width: 720px;
     }
