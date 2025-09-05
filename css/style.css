@@ -286,6 +286,7 @@ header .container nav .search-bar {
     flex-wrap: wrap;
     position: relative;
     align-items: center;
+    margin-top: 45px;
     justify-content: flex-end;
     overflow: hidden;
 }
