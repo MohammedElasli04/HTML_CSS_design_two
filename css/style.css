@@ -286,7 +286,7 @@ header .container nav .search-bar {
     flex-wrap: wrap;
     position: relative;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     overflow: hidden;
 }
 .services-section2::before {
@@ -298,8 +298,13 @@ header .container nav .search-bar {
     width: 100%;
     height: 100%;
 }
-.services-section2 .text-container,.services-section2 .imgbox {
-    flex: 1;
+.services-section2 img {
+    position: absolute;
+    left:20%;
+    bottom: -50px;
+}
+.services-section2 .text-container{
+    flex-basis: 50%;
     position: relative;
 }
 .services-section2 .text-container {
@@ -315,6 +320,11 @@ header .container nav .search-bar {
 @media (max-width: 768px) {
     .services-section2 .text-container {
         margin-left: 0;
+        flex-basis: 100%;
+    }
+    .services-section2 img {
+        left: 50%;
+        transform: translateX(-50%);
     }    
 }
 
@@ -334,19 +344,6 @@ header .container nav .search-bar {
     content: "\f108";
     font-weight: 900;
     margin-right: 10px;
-}
-.services-section2 .imgbox {
-    display: flex;
-    justify-content: flex-end;
-}
-@media (max-width: 768px) {
-    .services-section2 .imgbox {
-        display: none;
-    }   
-}
-.services-section2 .imgbox img {
-    position: relative;
-    bottom: -180px;
 }
 /* End Services */
 /* Extra Small */
