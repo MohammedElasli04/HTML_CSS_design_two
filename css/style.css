@@ -431,13 +431,45 @@ header .container nav .search-bar {
 /* End Portfolio */
 /* Start Video */
 .video {
-
+    position: relative;
+}
+.video::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--overlay-color);
 }
 .video video {
-
+    max-width: 100%;
 }
 .video .text-box {
-    
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    width: 100%;
+    background: var(--transparent-color);
+}
+.video .text-box h4{
+    margin: 30px 0;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.video .text-box p{
+    text-transform: capitalize;
+    margin-bottom: 25px;
+}
+.video .text-box button{
+    background: black;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 5px;
 }
 /* End Video */
 /* Extra Small */
