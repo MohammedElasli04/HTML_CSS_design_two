@@ -351,7 +351,7 @@ header .container nav .search-bar {
 .Portfolio .container .shufll {
     display: flex;
     justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 45px;
 }
 .Portfolio .container .shufll li:first-child {
     background-color: var(--main-color);
@@ -368,6 +368,45 @@ header .container nav .search-bar {
 .Portfolio .container .shufll li:hover {
     background-color: var(--main-color);
     color: white;
+}
+.Portfolio .img-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.Portfolio .img-container .img-box {
+    flex-basis: 25%;
+    position: relative;
+    overflow: hidden;
+}
+.Portfolio .img-container .img-box:hover .text-box {
+    bottom: 0;
+}
+.Portfolio .img-container .img-box img {
+    max-width: 100%;
+    transition: 0.3s;
+}
+.Portfolio .img-container .img-box:hover img {
+    transform: scale(1.2);
+}
+.Portfolio .img-container .img-box .text-box {
+    padding: 15px 10px;
+    position: absolute;
+    background: white;
+    width: 100%;
+    border-radius: 25px 25px 0 0;
+    bottom: -100%;
+    transition: 0.3s;
+} 
+.Portfolio .img-container h5, .Portfolio .img-container p {
+    color: black;
+}
+.Portfolio .img-container h5 {
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.Portfolio .img-container p {
+    font-size: 12px;
+    color: var(--main-color);
 }
 /* End Portfolio */
 /* Extra Small */
