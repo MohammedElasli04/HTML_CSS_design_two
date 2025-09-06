@@ -378,6 +378,16 @@ header .container nav .search-bar {
     position: relative;
     overflow: hidden;
 }
+@media (max-width: 992px) {
+    .Portfolio .img-container .img-box {
+        flex-basis: 50%;
+    }    
+}
+@media (max-width:768px) {
+    .Portfolio .img-container .img-box {
+        flex-basis: 100%;
+    }
+}
 .Portfolio .img-container .img-box:hover .text-box {
     bottom: 0;
 }
