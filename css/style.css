@@ -278,7 +278,6 @@ header .container nav .search-bar {
     line-height: 1.8;
     color: var(--text-color);
 }
-/* Services Section Two */
 .services-section2 {
     background-image: url(../images/design-features.jpg);
     display: flex;
@@ -315,7 +314,7 @@ header .container nav .search-bar {
 }
 @media (max-width: 992px) {
     .services-section2 .text-container {
-    margin-left: 50px;
+        margin-left: 50px;
     }    
 }
 @media (max-width: 768px) {
@@ -328,13 +327,11 @@ header .container nav .search-bar {
         transform: translateX(-50%);
     }    
 }
-
 .services-section2 .text-container h4{
     text-transform: uppercase;
     font-weight: normal;
     font-size: 20px;
     margin-bottom: 30px;
-
 }
 .services-section2 .text-container ul li {
     padding: 10px 0;
@@ -347,6 +344,32 @@ header .container nav .search-bar {
     margin-right: 10px;
 }
 /* End Services */
+/* Start Portfolio */
+.Portfolio {
+    padding-bottom: var(--padding-section);
+}
+.Portfolio .container .shufll {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.Portfolio .container .shufll li:first-child {
+    background-color: var(--main-color);
+    color: white;
+}
+.Portfolio .container .shufll li {
+    padding: 10px 15px;
+    text-transform: capitalize;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.Portfolio .container .shufll li:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+/* End Portfolio */
 /* Extra Small */
 @media (max-width: 576px) {
     .container {
