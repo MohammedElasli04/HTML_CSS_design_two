@@ -585,6 +585,14 @@ header .container nav .search-bar {
     border-radius: 50%;
     margin-right: 20px;
 }
+@media (max-width: 576px) {
+    .Our-Skills .container .testimonials .box {
+        flex-direction: column;
+    }
+    .Our-Skills .container .testimonials .box img {
+        margin-bottom: 10px;
+    }
+}
 .Our-Skills .container .testimonials .box .text {
     border-bottom:1px solid var(--text-color) ;
 }
@@ -613,6 +621,47 @@ header .container nav .search-bar {
 .Our-Skills .container .testimonials .bullets li:nth-child(2) {
     background-color: var(--main-color);
     border-color: var(--main-color);
+}
+.Our-Skills .container .skills > h4 {
+    color: black;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.Our-Skills .container .skills .progress {
+    height: 39px;
+    background: #cfcfcf;
+    margin-bottom: 30px;
+}
+.Our-Skills .container .skills .progress .current-pro {
+    width: 90%;
+    height: 100%;
+    background: var(--main-color);
+    position: relative;
+}
+.Our-Skills .container .skills .progress .current-pro:before {
+    content: attr(data-progress);
+    padding: 5px;
+    background-color: black;
+    border-radius: 5px;
+    right: -20px;
+    position: absolute;
+    top: -44px;
+}
+.Our-Skills .container .skills .progress .current-pro:after {
+    content: "";
+    position: absolute;
+    right: -10px;
+    top: -17px;
+    border: solid 9px;
+    border-color: black transparent transparent transparent;
+
+}
+@media (max-width: 992px) {
+    .Our-Skills .container > div {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
 }
 /* End Skills */
 /* Extra Small */
