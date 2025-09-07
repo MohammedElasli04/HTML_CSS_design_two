@@ -554,7 +554,66 @@ header .container nav .search-bar {
 }
 /* End stats */
 /* Start Skills */
-
+.Our-Skills {
+    padding-top: var(--padding-section);
+    padding-bottom: var(--padding-section);
+}
+.Our-Skills .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.Our-Skills .container > div {
+    flex-basis: 45%;
+}
+.Our-Skills .container > div .main-heading {
+    text-align: center;
+}
+.Our-Skills .container > div .main-heading h4 {
+    text-transform: uppercase;
+    color: black;
+    font-weight: normal;
+}
+.Our-Skills .container .testimonials .box {
+    margin-bottom: 35px;
+    display: flex;
+    align-items: center;
+}
+.Our-Skills .container .testimonials .box img {
+    width: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.Our-Skills .container .testimonials .box .text {
+    border-bottom:1px solid var(--text-color) ;
+}
+.Our-Skills .container .testimonials .box .text p {
+    line-height: 2;
+    color: black;
+    margin-bottom:5px ;
+}
+.Our-Skills .container .testimonials .box .text h4 {
+    color: var(--text-color);
+    font-weight: normal;
+    text-align: end;
+    margin-bottom: 10px;
+}
+.Our-Skills .container .testimonials .bullets {
+    display: flex;
+    justify-content: center;
+}
+.Our-Skills .container .testimonials .bullets li {
+    width: 15px;
+    height: 15px;
+    border: 1px solid var(--text-color);
+    border-radius: 50%;
+    margin-right: 4px;
+}
+.Our-Skills .container .testimonials .bullets li:nth-child(2) {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
 /* End Skills */
 /* Extra Small */
 @media (max-width: 576px) {
