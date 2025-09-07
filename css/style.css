@@ -479,7 +479,7 @@ header .container nav .search-bar {
     padding-top: var(--padding-section);
     overflow: hidden;
 }
-.About .container .imgbox {
+.About .container .imgbx {
     width: fit-content;
     margin: auto;
 }
