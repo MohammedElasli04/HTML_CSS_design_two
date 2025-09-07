@@ -3,7 +3,7 @@
 :root {
     --main-color:#19c8fa;
     --overlay-color:rgb(0 0 0 / 50%);
-    --transparent-color:rgb(15 116 143 / 50%);
+    --transparent-color:rgb(15 116 143 / 80%);
     --padding-section:100px;
     --text-color:#777;
 }
@@ -483,19 +483,64 @@ header .container nav .search-bar {
     width: fit-content;
     margin: auto;
 }
-.About .container img {
+.About .container .imgbx img {
     max-width: 100%;
     position: relative;
     bottom: -123px;
     margin-top: -123px;
 }
 @media (max-width: 768px) {
-    .About .container img {
+    .About .container .imgbx img {
         bottom: -70px;
         margin-top: -100px;
     }    
 }
 /* End About */
+/* Start stats */
+.stats {
+    background-image: url(../images/stats.png);
+    background-size: cover;
+    position: relative;
+    min-height: 400px;
+}
+.stats::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--overlay-color);
+}
+.stats .container {
+    display: flex;
+    padding: 30px 40px;
+    background-color: var(--transparent-color);
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.stats .container .box {
+    flex-basis: 25%;
+}
+.stats .container .box i {
+    padding: 10px;
+    background: black;
+    border-radius: 50%;
+}
+.stats .container .box h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+.stats .container .box p {
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
+/* End stats */
 /* Extra Small */
 @media (max-width: 576px) {
     .container {
