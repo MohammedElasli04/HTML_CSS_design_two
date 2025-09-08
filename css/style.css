@@ -708,7 +708,7 @@ header .container nav .search-bar {
 /* Start Pricing */
 .Pricing {
     padding-top: var(--padding-section);
-    padding-bottom: var(--padding-section);
+    padding-bottom: calc(var(--padding-section) / 2);
 }
 .Pricing .container .plans{
     display: grid;
@@ -883,6 +883,7 @@ header .container nav .search-bar {
     border: 1px solid white;
     left: -6px;
     border-radius: 0 30px 30px 0;
+    cursor: pointer;
 }
 @media (max-width: 992px) {
     .Subscribing .container .form input[type="button"] {
@@ -896,6 +897,12 @@ header .container nav .search-bar {
     }
 }
 /* End Subscribing */
+/* Start Contact */
+.Contact {
+    padding-top: var(--padding-section);
+    padding-bottom: var(--padding-section);
+}
+/* End Contact */
 /* Extra Small */
 @media (max-width: 576px) {
     .container {
