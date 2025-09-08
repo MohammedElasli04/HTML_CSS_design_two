@@ -778,6 +778,11 @@ header .container nav .search-bar {
     text-decoration: none;
     text-transform: capitalize;
     border-radius: 5px;
+    transition: 0.3s;
+}
+.Pricing .container .plans .plan .footer a:hover {
+    background-color: var(--main-color);
+    color: white;
 }
 .Pricing .container > p {
     text-align: center;
@@ -795,6 +800,9 @@ header .container nav .search-bar {
     border-radius: 5px;
 }
 /* End Pricing */
+/* Start Subscribing */
+
+/* End Subscribing */
 /* Extra Small */
 @media (max-width: 576px) {
     .container {
