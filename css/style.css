@@ -655,7 +655,6 @@ header .container nav .search-bar {
     top: -17px;
     border: solid 9px;
     border-color: black transparent transparent transparent;
-
 }
 @media (max-width: 992px) {
     .Our-Skills .container > div {
@@ -664,6 +663,7 @@ header .container nav .search-bar {
     }
 }
 /* End Skills */
+/* Start Quote */
 .quote {
     background-image: url(../images/quote.jpg);
     background-size: cover;
@@ -704,6 +704,82 @@ header .container nav .search-bar {
 .quote .container p {
     color: #cdcdcd;
 }
+/* End Quote */
+/* Start Pricing */
+.Pricing {
+    padding-top: var(--padding-section);
+    padding-bottom: var(--padding-section);
+}
+.Pricing .container .plans{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+.Pricing .container .plans .plan{
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.Pricing .container .plans .plan .header {
+    border-top: 1px solid var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+}
+.Pricing .container .plans .plan .header h3 {
+    text-transform: uppercase;
+    margin-top: 30px;
+    color: black;
+    font-weight: normal;
+}
+.Pricing .container .plans .plan .header h1 {
+    font-size: 50px;
+    margin: 25px auto 30px;
+    width: fit-content;
+    position: relative;
+    color: black;
+}
+.Pricing .container .plans .plan .header h1::before {
+    content: "$";
+    font-size: 18px;
+    position: absolute;
+    left: -16px;
+}
+.Pricing .container .plans .plan .header h1::after {
+    content: "/Mo";
+    font-size: 18px;
+    position: absolute;
+    right: -45px;
+    bottom: 8px;
+}
+.Pricing .container .plans .plan .body {
+    border-bottom: 1px solid var(--main-color);
+}
+.Pricing .container .plans .plan .body p {
+    padding: 25px;
+    color: black;
+    position: relative;
+    text-transform: capitalize;
+}
+.Pricing .container .plans .plan .body p:not(:last-child)::before {
+    content:"";
+    position: absolute;
+    bottom: 0;
+    width: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 1px;
+    background-color: var(--main-color);
+}
+.Pricing .container .plans .plan .footer a{
+    display: block;
+    padding: 20px;
+    border: 1px solid var(--main-color);
+    width: fit-content;
+    margin: 30px auto;
+    color: black;
+    text-decoration: none;
+    text-transform: capitalize;
+    border-radius: 5px;
+}
+/* End Pricing */
 /* Extra Small */
 @media (max-width: 576px) {
     .container {
