@@ -779,6 +779,21 @@ header .container nav .search-bar {
     text-transform: capitalize;
     border-radius: 5px;
 }
+.Pricing .container > p {
+    text-align: center;
+    color: black;
+    margin-top: 35px;
+}
+.Pricing .container > a {
+    display: block;
+    width: fit-content;
+    margin: 20px auto 0;
+    padding: 15px 25px;
+    background: var(--main-color);
+    text-decoration: none;
+    text-transform: capitalize;
+    border-radius: 5px;
+}
 /* End Pricing */
 /* Extra Small */
 @media (max-width: 576px) {
